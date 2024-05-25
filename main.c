@@ -4,11 +4,15 @@
 
 #include "./explode.h"
 
-int main(void)
+int main(int argc, char *argv[])
 {
-    char *test = "Hello I am Josh and I like tofu";
+    if (argc != 3)
+    {
+        printf("%s needs 2 args, the first being an input string and the second being a delim char\n", argv[0]);
+        return EXIT_FAILURE;
+    }
 
-    StringArr *expanded_test = explode(test, SPACE_CHAR);
+    StringArr *expanded_test = Explode(argv[1], argv[2][0]);
 
     if (expanded_test == NULL)
     {

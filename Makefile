@@ -1,6 +1,6 @@
 include Makefile.properties
 
-all: build run
+all: build
 
 clean:
 	rm main

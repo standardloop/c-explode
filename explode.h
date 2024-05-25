@@ -3,6 +3,7 @@
 
 #define SPACE_CHAR ' '
 #define NULL_CHAR '\0'
+#define SLASH_CHAR '/'
 
 typedef struct
 {
@@ -10,7 +11,7 @@ typedef struct
     int num_strings;
 } StringArr;
 
-StringArr *explode(char *, char);
+StringArr *Explode(char *, char);
 void FreeStringArr(StringArr *);
 void PrintStringArr(StringArr *);
 void PrintStringArrDebug(StringArr *);

@@ -1,28 +1,27 @@
 # c-explode
 
+This program turns a string, into an array of strings based on a delim character.
+
 ## Build and Run
 ```sh
 $ make
+$ ./main <INPUT_STR> <DELIM>
 ```
 
 ## Example Output
 
-This program turns a string, into an array of strings based on a delim character.
-
-For example, it turns:
-
-`"Hello I am Josh and I like tofu"` with a delim of `' '` 
-
-into `["Hello", "I", "am", "Josh", "and", "I", "like", "tofu"]`
-
 ```sh
-$ ./main
-["Hello", "I", "am", "Josh", "and", "I", "like", "tofu"]
+$ make
+$ ./main "hello I am josh" " "
+["hello", "I", "am", "josh"]
+
+$ ./main "hello,I,am,josh" ","
+["hello", "I", "am", "josh"]
 ```
 
-## Leaks
+## Leaks (macOS)
 ```sh
-leaks --atExit -- ./main
+$ leaks --atExit -- ./main "hello I am josh" " "
 
 ...
 (truncated)
