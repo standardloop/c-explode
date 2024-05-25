@@ -80,10 +80,17 @@ void FreeStringArr(StringArr *string_arr)
     int entry_count = 0;
     while (entry_count < string_arr->num_strings)
     {
-        free(string_arr->strings[entry_count]);
+        if (string_arr->strings[entry_count] != NULL)
+        {
+            free(string_arr->strings[entry_count]);
+        }
+
         entry_count++;
     }
-    free(string_arr->strings);
+    if (string_arr->strings != NULL)
+    {
+        free(string_arr->strings);
+    }
     free(string_arr);
     return;
 }
