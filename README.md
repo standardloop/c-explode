@@ -1,6 +1,10 @@
 # c-explode
 
-This program turns a string, into an array of strings based on a delim character.
+This program turns a string into an array of strings based on a delim character.
+
+This is similiar to `split()` in python or `explode()` in php.
+
+I think explode is a cooler name so I used it for this.
 
 ## Build and Run
 ```sh
