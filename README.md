@@ -4,6 +4,8 @@ This program turns a string into an array of strings based on a delim character.
 
 This is similiar to `split()` in python or `explode()` in php.
 
+The function name, `EveryoneExplodeNow()` is a play on the funny Pokémon card move.
+
 ## Build and Run
 ```sh
 $ make
