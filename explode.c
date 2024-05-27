@@ -4,7 +4,7 @@
 
 #include "./explode.h"
 
-StringArr *Explode(char *input_str, char delim)
+StringArr *EveryoneExplodeNow(char *input_str, char delim)
 {
     if (input_str == NULL || delim == NULL_CHAR)
     {

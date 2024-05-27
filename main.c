@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
         return EXIT_FAILURE;
     }
 
-    StringArr *expanded_test = Explode(argv[1], argv[2][0]);
+    StringArr *expanded_test = EveryoneExplodeNow(argv[1], argv[2][0]);
 
     if (expanded_test == NULL)
     {
