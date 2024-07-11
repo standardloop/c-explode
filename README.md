@@ -1,3 +1,7 @@
+# Deprecated
+
+This repo is superseed by https://github.com/standardloop/c-util and https://github.com/standardloop/c-json
+
 # c-explode
 
 This program turns a string into an array of strings based on a delim character.
